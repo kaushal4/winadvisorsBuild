@@ -20,24 +20,20 @@ class Main extends React.Component{
             this.addNum = document.querySelector(".addingNumbers").getBoundingClientRect().y;
             this.parallaxElement = document.querySelector(".ParallexSection");
             this.perallaxDimentions = this.parallaxElement.getBoundingClientRect();
-            console.log(this.perallaxDimentions);
             this.parallaxPseudo = window.getComputedStyle(this.parallaxElement,"::after");
         }
     handleScroll(){
         let offset = window.scrollY;
         if((this.windowy*0.9)+offset>this.addNum && !this.state.activateWorldClients){
-            /*window.removeEventListener("scroll",this.handleScroll);*/
+            window.removeEventListener("scroll",this.handleScroll);
             this.setState(()=>{
                 return({activateWorldClients:true})
             })
         }
-        if(((this.windowy)+offset)>this.perallaxDimentions.top){
-            console.log((this.perallaxDimentions.bottom-this.perallaxDimentions.top)/2-(((this.windowy)+offset)-this.perallaxDimentions.top));
-        }
     }
     render(){
         return(
-            <div>
+            <div className="main">
                 <SlidingImages />
                 <Genhandb title={this.state.Genhandb1.gentit1} body={this.state.Genhandb1.genbody1} but={this.state.Genhandb1.genButton1} />
                 <WorldClients active={this.state.activateWorldClients}/>

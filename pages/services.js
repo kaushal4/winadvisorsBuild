@@ -1,7 +1,7 @@
 
 import React from "react"
 import Navbar from "../components/navbar/Navbar"
-import Main from "../components/Main"
+import style from "Services.module.css"
 class App extends React.Component{
     constructor(){
         super();
@@ -28,7 +28,7 @@ class App extends React.Component{
         return(
             <div>
                 <Navbar value={this.state.value}/>
-                <Main />
+                
             </div>
         )
     }

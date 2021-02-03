@@ -1,5 +1,11 @@
 import React from "react"
-import AddingNumbers from "./AddingNumbers"
+function AddingNumbers(props){
+    return(
+        <div>
+        <span>{props.value}<br />{props.name}</span>
+        </div>
+    )
+}
 class WorldClients extends React.Component{
     constructor(){
         super();

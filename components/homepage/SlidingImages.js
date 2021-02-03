@@ -1,6 +1,6 @@
 import React from "react"
 import Images from "next/image"
-
+import style from "../../styles/arrow.module.css"
 function Image(props){
     return(
         <div >
@@ -66,9 +66,9 @@ class SlidingImages extends React.Component{
     render(){
         return(
         <div className="imageContainer"  onMouseEnter={this.stopSliding} onMouseLeave={this.startSliding}>
-            <Image imageArr={this.state.imageArr} handleRight={this.handleRight} stopSliding={this.stopSliding} startSliding={this.startSliding}/>
-            <i className="arrow right" onClick={this.handleRight} style={{visibility:this.state.hover}}></i>
-            <i className="arrow left" onClick={this.handleLeft} style={{visibility:this.state.hover}}></i>
+            <Image imageArr={this.state.imageArr}/>
+            <i className={`${style.arrow} ${style.right}`} onClick={this.handleRight} style={{visibility:this.state.hover}}></i>
+            <i className={`${style.arrow} ${style.left}`} onClick={this.handleLeft} style={{visibility:this.state.hover}}></i>
         </div>
         )
     }
