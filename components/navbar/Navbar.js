@@ -49,6 +49,9 @@ class Navbar extends React.Component{
         this.handelMouseLeave = this.handelMouseLeave.bind(this);
         this.enteredBlock = false;
     }
+    handleClick(){
+        location.href = "/";
+    }
     handeldropbox(dropbox){
         if(dropbox===0){
             this.setState(()=>{
@@ -102,7 +105,7 @@ class Navbar extends React.Component{
         return(
             <nav className="nav">
                 <div className="block-1"></div>
-                <img src={"/images/WIN logo.jpg"} alt={`could not load logo`} />
+                <img src={"/images/WIN logo.jpg"} alt={`could not load logo`} onClick={this.handleClick}/>
                 <div className={`block-2 ${this.state.move}`}>
 
                     <Block2 hideState={this.state.clickState} mousepos={this.state.mouseDropbox} handeldropbox={this.handeldropbox} handeldropboxLeave={this.handelMouseLeave}/>
