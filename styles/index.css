@@ -190,6 +190,8 @@ body{
     nav> .block-2> .hidden{
         display: none;
     }
+    
+
   }
   /* image logic */
   .imageContainer{
@@ -262,13 +264,13 @@ body{
     justify-content: space-around;
     align-items: center;
     font-size: 1.75rem;
-    color: aliceblue;
+    color:black;
     background-image: url('../public/images/wmap2.jpg');
     background-repeat: no-repeat;
     background-position: 0% 50%;
     background-size: cover;
-    background-color: rgba(0,0,0,0.5);
-    background-blend-mode:overlay;
+    background-color: rgba(256,256,256,0.1);
+    background-blend-mode:color; 
 }
 .addingNumbers>div{
     margin:0.4rem;
@@ -307,9 +309,7 @@ body{
     background-color: rgba(0,0,0,0.5);
     background-blend-mode:overlay;
 }
-
-/* //css for grid */
-
+/*css for grid */
 .GridHead{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -326,3 +326,142 @@ body{
 .GridElement{
     width:0.20vw;
 }
+/*css for cards*/
+
+.Container{
+    margin:5vh 0 5vh 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+}
+.innerContainer>p{
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: x-large;
+    margin:0 1.50rem 0 1.50rem;
+}
+.innerContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    position:relative;
+}
+.innerContainer::after{
+    content:"";
+    display: inline-block;
+    width:1px;
+    height:100%;
+    background-color:black;
+    position:absolute;
+    left:100%
+}
+.innerContainer:last-child::after{
+    display: none;
+}
+@media screen and (max-width: 760px){
+    /*cards logic*/
+    .Container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+    .innerContainer{
+        margin:1rem 0 1rem 0;
+    }
+    .innerContainer:nth-child(-n+2)::before{
+        content:"";
+        display: inline-block;
+        width:90%;
+        height:1px;
+        background-color:black;
+        position:absolute;
+        top:100%;
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width: 1300px){
+    .innerContainer> p{
+        margin:0rem 5rem 0 5rem;
+    }
+}
+@media screen and (max-width: 420px){
+    /*cards logic*/
+    .Container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .innerContainer{
+        margin:1rem 0 1rem 0;
+    }
+    .innerContainer:nth-child(-n+3)::before{
+        content:"";
+        display: inline-block;
+        width:90%;
+        height:1px;
+        background-color:black;
+        position:absolute;
+        top:100%;
+        margin-top: 1rem;
+    }
+    /*world client logic*/
+    .addingNumbers{
+        flex-direction: column;
+    }
+}
+/*svg animations*/
+#outer-wheel{
+    fill:rgb(1, 179, 179);
+    transform: rotate(0);
+    transform-origin: center;
+    animation: wheel 6s linear infinite ;
+  }
+  
+  @keyframes wheel{
+    from{
+      transform: rotate(360deg);
+    }
+    to{
+      transform: rotate(0);
+    }
+  }
+  /*coin*/
+  #coin{
+    fill:teal;
+    -webkit-clip-path: inset(0% 100% 0% 0%);
+     clip-path: inset(0% 100% 0% 0%);
+     animation: money 1s linear infinite;
+   }
+   @keyframes money{
+     from{
+       -webkit-clip-path: inset(0% 100% 0% 0%);
+       clip-path: inset(0% 100% 0% 0%);
+     }
+     to{
+       -webkit-clip-path: inset(0% 0% 0% 0%);
+       clip-path: inset(0% 0% 0% 0%);
+     }
+   }
+   /*india animation*/
+   #blink-1,#blink-2,#blink-3{
+    -webkit-clip-path: circle(100%);
+    clip-path: circle(100%);
+    animation: blinking 1s linear infinite;
+    fill:rgb(1, 179, 179);
+  }
+  
+  @keyframes blinking{
+    from{
+      -webkit-clip-path: circle(0%);
+      clip-path: circle(0%);
+    }
+    to{
+      -webkit-clip-path: circle(100%);
+      clip-path: circle(100%);
+    }
+  }
