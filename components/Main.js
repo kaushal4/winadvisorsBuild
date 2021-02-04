@@ -3,6 +3,7 @@ import SlidingImages from "./homepage/SlidingImages"
 import WorldClients from "./homepage/WordClients"
 import Genhandb from "./homepage/Genhandb"
 import ImageGrid from "./homepage/ImageGrid"
+import Cards from "./homepage/Cards"
 class Main extends React.Component{
     constructor(){
         super();
@@ -35,7 +36,8 @@ class Main extends React.Component{
         return(
             <div className="main">
                 <SlidingImages />
-                <Genhandb title={this.state.Genhandb1.gentit1} body={this.state.Genhandb1.genbody1} but={this.state.Genhandb1.genButton1} />
+                <h1>We address your following concerns</h1>
+                <Cards />
                 <WorldClients active={this.state.activateWorldClients}/>
                 <div className="ParallexSection">
                     <ImageGrid />
