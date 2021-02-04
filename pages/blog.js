@@ -23,7 +23,7 @@ import Main from "../components/Main"
 import NavMenu from '../components/blogpage/NavMenu.js'
 import MainContent from '../components/blogpage/MainContent.js'
 import Footer from '../components/blogpage/Footer.js'
-
+import ImageBar from "../components/ImageBar"
 
 class App extends React.Component{
     constructor(){
@@ -51,6 +51,7 @@ class App extends React.Component{
         return(
             <div>
                 <Navbar value={this.state.value}/>
+                <ImageBar imageLocation="/images/blogimg2.jpg" text="Blog"/>
                 <div className={styles.container}>
                   <MainContent/>
                   <NavMenu/>
