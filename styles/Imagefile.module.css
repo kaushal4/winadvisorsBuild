@@ -1,0 +1,20 @@
+.Container{
+    height:35vh;
+    position:relative;
+    background-color: teal;
+}
+.innerImage{
+    height:100%;
+    width: 100%;
+    mix-blend-mode:color-burn;
+    object-fit: cover;
+}
+.text{
+    margin:0;
+    position: absolute;
+    top:50%;
+    left:5%;
+    color:aliceblue;
+    font-size: 200%;
+    transform: translate(0%,-50%); 
+}

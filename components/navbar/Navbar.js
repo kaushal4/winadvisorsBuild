@@ -18,14 +18,14 @@ function Block2(props){
                 <div className="nav-line"></div>
                 <button >Virtual CFO</button>
                 <div className="nav-line"></div>
-                <button >Tax and Regulatory</button>
+                <button ><Link href="/tax"><a>tax and regulatory</a></Link></button>
                 <div className="nav-line"></div>
                 <button >360° Assistant</button>
                 <div className="nav-line"></div>
             </div>
             
             <div className="nav-line"></div>
-            <button >Blog</button>
+            <button ><Link href="/blog"><a>Blog</a></Link></button>
             <div className="nav-line"></div>
             <button>contact us</button>
             <div className="nav-line"></div>

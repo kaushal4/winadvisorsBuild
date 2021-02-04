@@ -216,6 +216,8 @@ body{
   }
   .imageContainer > div > .slideinRight{
       width: 100%;
+      clip-path: inset(0);
+      -webkit-clip-path:inset(0);
       animation: slide 0.5s linear;
   }
   .imageContainer > div > .slideinLeft{
@@ -226,12 +228,12 @@ body{
     animation: slidel 0.5s linear;
 }
   @keyframes slide{
-      0%{width: 0%;}
-      100%{width: 100%;}
+    100% { clip-path: inset(0);-webkit-clip-path:inset(0); }
+    0% { clip-path: inset(0 100% 0 0);-webkit-clip-path:inset(0 0 0 100%); }
   }
   @keyframes slidel{
     100% { clip-path: inset(0);-webkit-clip-path:inset(0); }
-    0% { clip-path: inset(0 0 0 100%);-webkit-clip-path:inset(0 0 0 100%); }
+    0% { clip-path: inset(0 0 0 100%);-webkit-clip-path:inset(0 100% 0 0); }
 }
   .top2{
       z-index:1
