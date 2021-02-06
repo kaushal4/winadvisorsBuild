@@ -3,7 +3,7 @@ import Images from "next/image"
 import style from "../../styles/arrow.module.css"
 function Image(props){
     return(
-        <div >
+        <div className={style.sliderimages}>
             <div className={props.imageArr[0]} >
                 <img src={"/images/placeholder-1.jpg"} alt="img not found" width="64" height="64" ></img>
             </div>

@@ -43,7 +43,9 @@
 .top1{
     z-index: 2;
 }
-
+.sliderimages img{
+  object-fit: cover;
+}
 .arrow {
     border: solid black;
     border-width: 0 5px 5px 0;

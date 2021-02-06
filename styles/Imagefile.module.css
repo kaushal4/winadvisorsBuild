@@ -6,7 +6,7 @@
 .innerImage{
     height:100%;
     width: 100%;
-    mix-blend-mode:color-burn;
+    mix-blend-mode:multiply;
     object-fit: cover;
 }
 .text{

@@ -27,7 +27,7 @@ function Block2(props){
             <div className="nav-line"></div>
             <button ><Link href="/blog"><a>Blog</a></Link></button>
             <div className="nav-line"></div>
-            <button>contact us</button>
+            <button><Link href="/contactus"><a>Contact Us</a></Link></button>
             <div className="nav-line"></div>
         </div>
     )
