@@ -35,5 +35,5 @@ yarn-error.log*
 
 
 #keys in next.config
+/next.config.js/
 
-next.config.js
