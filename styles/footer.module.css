@@ -1,3 +1,57 @@
+/*failure message*/
+.failureMessage{
+    position:relative;
+    top:-1rem;
+    color:red
+}
+
+
+/* buttons */
+.hide{
+    display: none;
+}
+.button{
+    border: 2px solid teal;
+    width: 8em;
+    height: 2em;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+
+}
+.button:hover{
+    box-shadow:
+    inset 4rem 0 0 0 teal,
+    inset -4rem 0 0 0 teal;
+    cursor: pointer;
+    color: #263238;
+    color:white;
+}
+
+/*subscribe cover*/
+
+.cover{
+    position:absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    top:0;
+    left:50%;
+    background-color: teal;
+    clip-path: circle(0);
+    -webkit-clip-path:circle(0);
+    transition: 0.2s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover.show{
+    clip-path: circle(100%);
+    -webkit-clip-path:circle(100%);
+}
+
+
+
 .footerText{
     width:100%;
     border-top: 1px;
@@ -35,6 +89,9 @@
 .aboutUsContainer,.subscribeContainer{
     justify-self:center;
 }
+.upperContainer{
+    position:relative;
+}
 
 .aboutUsContainer{
     margin: 0 2.25rem 0 2.25rem;
@@ -44,7 +101,10 @@
 }
 .subscribeContainer> form >input{
     width:100%;
-    font-size: 1.5em;
+    line-height: 2em;
+    font-size: 1em;
+    box-shadow:0 0 5px 2.5px  rgba(25, 230, 202, 0.22);
+    margin:1.5em 0 0.75em 0;
 }
 
 @media screen and (max-width:680px){

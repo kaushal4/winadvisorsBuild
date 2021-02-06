@@ -2,7 +2,7 @@ import React from "react"
 import Navbar from "../components/navbar/Navbar"
 import Main from "../components/Main"
 import Footer from "../components/footer"
-
+import Head from "next/head"
 class App extends React.Component{
     constructor(){
         super();
@@ -27,7 +27,13 @@ class App extends React.Component{
     
     render(){
         return(
+            
             <div>
+                <Head>
+                <title>winadvisors</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                </Head>
                 <Navbar value={this.state.value}/>
                 <Main />
                 <Footer />
