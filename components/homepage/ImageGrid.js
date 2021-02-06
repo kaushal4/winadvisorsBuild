@@ -14,7 +14,7 @@ class ImageGrid extends React.Component{
         super();
         this.dimensions = [4,5];
         this.images = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
-        this.ImageComponents = this.images.map((element)=>{return(<GridImages link={element}/>)})
+        this.ImageComponents = this.images.map((element,index)=>{return(<GridImages link={element} key={index}/>)})
     }
 
     render(){
