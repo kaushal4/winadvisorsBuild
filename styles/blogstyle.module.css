@@ -47,6 +47,8 @@
     color:#61dafb;
   }
   .navigationmenu {
+    
+    
     padding-top: 15%;
     grid-column: span 4;
     align-content:center;
@@ -68,6 +70,7 @@
   }
   
   .blogh5{
+    
     margin-top: 30%;
     margin-bottom:2%;
     margin-left:3% ;
@@ -148,6 +151,7 @@
     margin-top: 0;
   }
   .date{
+    
     color: #000000;
     line-height: 25px;
     font-size: 15px;
@@ -187,10 +191,12 @@
   .hiddenfulltext{
     display: none;
   }
+  
   .showfulltext{
     display: block;
-    transition-delay: 3s;
+    
   }
+  
   .blogsection{
     padding-top: 0;
     padding-left: 3%;
