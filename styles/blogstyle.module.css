@@ -242,6 +242,14 @@
       grid-column: span 12;
     }
   }
+  .fixed{
+    position:fixed;
+    top:15vh;
+    right:0;
+    width: 29vw;
+    margin:0;
+    padding:0;
+  }
   @media screen and (max-width: 768px) {
     .navigationmenu {
       grid-row: 3;
