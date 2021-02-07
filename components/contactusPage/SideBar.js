@@ -1,8 +1,9 @@
 import React from 'React';
+import styles from '../../styles/contactus.module.css'
 class SideBar extends React.Component{
     render(){
         return (
-            <h1>sidebar</h1>
+            <div className={styles.sidebar}></div>
         )
     }
 }

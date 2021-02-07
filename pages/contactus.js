@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "../components/navbar/Navbar";
 import Main from "../components/Main";
-import styles from '../styles/blogstyle.module.css';
+import styles from '../styles/contactus.module.css';
 import ImageBar from '../components/ImageBar';
 import SideBar from '../components/contactusPage/SideBar.js'
 import MainPage from '../components/contactusPage/MainPage.js'
@@ -28,12 +28,14 @@ class ContactUs extends React.Component{
         }
     }
     render(){
-        return(
-            <div>
-                <Navbar value={this.state.value}/>
+        return(<div>
+            <Navbar value={this.state.value}/>
                 <ImageBar imageLocation="./images/blogimg2.jpg" text="Contact Us"/>
+            <div className={styles.container}>
+                
                 <SideBar/>
                 <MainPage/>
+            </div>
             </div>
         )
     }

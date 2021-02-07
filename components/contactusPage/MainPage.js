@@ -1,8 +1,9 @@
 import React from 'React';
+import styles from '../../styles/contactus.module.css'
 class MainPage extends React.Component{
     render(){
         return (
-            <h1>mainpage</h1>
+            <div className={styles.mainpage}>main</div>
         )
     }
 }
