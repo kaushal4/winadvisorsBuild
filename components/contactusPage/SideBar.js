@@ -2,18 +2,19 @@ import React from 'React';
 import styles from '../../styles/contactus.module.css'
 class SideBar extends React.Component{
     render(){
-        return (
-            <div className={styles.sidebar}>sidebar
-            <h1>sidebar</h1>
-            <h1>sidebar</h1>
-            <h1>sidebar</h1>
-            <h1>sidebar</h1>
-            <h1>sidebar</h1>
-            <h1>sidebar</h1>
-            <h1>sidebar</h1>
-            <h1>sidebar</h1>
+        
+            let fixed=null;
+            if(this.props.position){fixed=styles.fixed}
+            return(
+            <div className={`${styles.sidebar} ${fixed}`}>
+                     
+            <div className={styles.blogh5}>ARCHIVE</div>
             
-            </div>
+            <div className={styles.thinseparatorline}></div>
+                <div className={styles.date}>April 2018</div>
+                
+                                            
+        </div>
         )
     }
 }

@@ -41,10 +41,12 @@ class ContactUs extends React.Component{
                 <Navbar value={this.state.value}/>
                 <ImageBar imageLocation="/images/blogimg2.jpg" text="Contact Us"/>
                 <div className={styles.container}>
-                <SideBar position={this.state.archive}/>
+                
                 <MainPage/>
-                <Footer/>
+                <SideBar position={this.state.archive}/>
+                
                 </div>
+                <Footer/>
             </div>
         )
     }

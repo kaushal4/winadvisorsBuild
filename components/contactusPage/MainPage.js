@@ -3,7 +3,21 @@ import styles from '../../styles/contactus.module.css'
 class MainPage extends React.Component{
     render(){
         return (
-            <div className={styles.mainpage}>main</div>
+            <div className={styles.mainpage}>
+                <h1>main</h1>
+                <h1>main</h1>
+                <h1>main</h1>
+                <h1>main</h1>
+                <h1>main</h1>
+                <h1>main</h1>
+                <h1>main</h1>
+                <h1>main</h1>
+                <h1>main</h1>
+                <h1>main</h1>
+                <h1>main</h1>
+                <h1>main</h1>
+                <h1>main</h1>
+                </div>
         )
     }
 }

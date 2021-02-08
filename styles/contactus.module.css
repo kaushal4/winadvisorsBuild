@@ -8,16 +8,23 @@
   .sidebar {
     
     grid-column: span 4;
-    align-content:center;
+    
    
   }
   .mainpage {
     
     grid-column: span 8;
-    align-content: center;
+    
     background: #c8e9e9;
   }
-
+  .fixed{
+    position:fixed;
+    top:15vh;
+    right:0;
+    width: 29vw;
+    margin:0;
+    padding:0;
+  }
   @media screen and (max-width: 768px) {
     .sidebar {
       grid-column: span 12;
@@ -34,28 +41,4 @@
       grid-column: span 12;
     }
   }
-  @media screen and (max-width: 480px) {
-    .sidebar {
-      grid-row: 2;
-      grid-column: span 12;
-    }
-    
-    .mainpage{
-      grid-row: 2;
-      grid-column: span 12;
-      
-    }
-    
-  }
-  @media screen and (max-width: 768px) {
-    .sidebar {
-      grid-row: 1;
-      grid-column: span 12;
-    }
-    
-    .mainpage{
-      grid-row: 2;
-      grid-column: span 12;
-    }
-    
-  }
+  
