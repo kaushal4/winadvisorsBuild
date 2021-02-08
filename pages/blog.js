@@ -18,7 +18,7 @@ class App extends React.Component{
         window.addEventListener("scroll",this.handleScroll);
         window.addEventListener("resize",()=>{this.vh = window.innerHeight*0.01;})
         this.vh = window.innerHeight*0.01;
-        this.archivey = document.querySelector(`.${styles.navigationmenu}`).getBoundingClientRect().y;
+        
     }
     handleScroll(){
         let posy = window.scrollY;
