@@ -8,22 +8,76 @@
   .sidebar {
     
     grid-column: span 4;
-    
+    padding:10%;
    
   }
   .mainpage {
     
     grid-column: span 8;
-    
+    width:100%;
     background: #c8e9e9;
+    padding:20px;
   }
-  .fixed{
-    position:fixed;
-    top:15vh;
-    right:0;
-    width: 29vw;
-    margin:0;
-    padding:0;
+  
+  .blogh5{
+    text-align: center;
+    margin-top: 30%;
+    margin-bottom:2%;
+    margin-left:3% ;
+      color:black;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      
+      
+      font-family: inherit;
+      line-height: 1.1;
+      margin-block-start: 1.67em;
+      margin-block-end: 1.67em;
+      
+  }
+  .date{
+    text-align: center;
+    color: #000000;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: Quicksand;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.02em;
+  }
+.contactTiles{
+  display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+  .contactTile{
+    display:inline-block;
+    height:200px;
+    width:200px;
+    background-color: #99c7c7;
+    align-content: center;
+    grid-column: span 4;
+    margin:15px;
+    padding:5vh;
+  }
+  .contactTile:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .contactForm{
+    background-color: white;
+    width: 70%;
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .contactTile {
+      grid-column: span 12;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .contactTile {
+      grid-column: span 12;
+    }
   }
   @media screen and (max-width: 768px) {
     .sidebar {
