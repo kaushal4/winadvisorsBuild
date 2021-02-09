@@ -195,19 +195,25 @@ body{
 
   }
   /* image logic */
+  .innerImageContainer{
+      background-color: rgba(117, 117, 241,0.1);
+  }
+
   .imageContainer{
       width: 100%;
-      height:55vh;
+      height:73vh;
       position:relative;
   }
   .imageContainer >div {
       width: 100%;
-      height:55vh;
+      height:73vh;
       position: relative;
   }
   .imageContainer >div >div >img{
       width: 100%;
-      height:55vh;
+      height:73vh;
+      mix-blend-mode: luminosity;
+      object-fit: cover;
   }
   /* trying to animate*/
   .imageContainer >div >div{
@@ -438,7 +444,7 @@ body{
     fill:teal;
     -webkit-clip-path: inset(0% 100% 0% 0%);
      clip-path: inset(0% 100% 0% 0%);
-     animation: money 1s linear infinite;
+     animation: money 1.5s linear infinite;
    }
    @keyframes money{
      from{
