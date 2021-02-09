@@ -82,6 +82,7 @@
 }
 .sidebar td {
   border: 1px solid black;
+  
   margin: 0;
   padding: 0;
 }
@@ -102,11 +103,12 @@
 font-size: 16px;
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-.contactTile img{
+.contactTile img:first-of-type{
   margin-left:25%;
   margin-right:auto;
-  width:10vh;
+  width:75px;
 }
+
   @media screen and (max-width: 768px) {
     .contactTile {
       grid-column: span 12;

@@ -6,15 +6,15 @@ class MainPage extends React.Component{
             <div className={styles.mainpage}>
                 <div className={styles.contactTiles}>
                 <div className={styles.contactTile}>
-                    <img src="./images/call.svg"></img>
+                    <img src="./images/email.png"></img>
                     <p>Expect us to respond within 48 hours.</p>
                 </div>
                 <div className={styles.contactTile}>
-                    <h2>Fax</h2>
+                <img src="./images/fax.jpg"></img>
                     <p>Contact us through fax</p>
                 </div>
                 <div className={styles.contactTile}>
-                    <h2>Phone</h2>
+                <img src="./images/call.png"></img>
                     <p>We are waiting to hear from you.</p>
                 </div>
                 </div>
