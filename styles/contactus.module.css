@@ -16,7 +16,7 @@
     grid-column: span 8;
     width:100%;
     background: #c8e9e9;
-    padding:20px;
+    padding:10%;
   }
   
   .blogh5{
@@ -54,11 +54,12 @@
     display:inline-block;
     height:200px;
     width:200px;
-    background-color: #99c7c7;
+    background-color: white;
     align-content: center;
     grid-column: span 4;
     margin:15px;
     padding:5vh;
+    border-radius: 10%;
   }
   .contactTile:hover{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -68,7 +69,44 @@
     width: 70%;
     
   }
+.sidebar table{
+  
+  background-color: #c8e9e9;
+  width:20vh;
+  height:19vh;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:10%;
+  margin-bottom: 40px;
+}
+.sidebar td {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+.sidebar td img{
 
+  width:35px;
+  margin-left: 10px;
+  
+  cursor: pointer;
+}
+.date img{
+  display: block;
+  width:40vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.date b{
+font-size: 16px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.contactTile img{
+  margin-left:25%;
+  margin-right:auto;
+  width:10vh;
+}
   @media screen and (max-width: 768px) {
     .contactTile {
       grid-column: span 12;

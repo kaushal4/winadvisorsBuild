@@ -6,7 +6,7 @@ class MainPage extends React.Component{
             <div className={styles.mainpage}>
                 <div className={styles.contactTiles}>
                 <div className={styles.contactTile}>
-                    <img src="../../public/images/call.svg"></img>
+                    <img src="./images/call.svg"></img>
                     <p>Expect us to respond within 48 hours.</p>
                 </div>
                 <div className={styles.contactTile}>

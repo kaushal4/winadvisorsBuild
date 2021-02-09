@@ -36,6 +36,7 @@ class ContactUs extends React.Component{
         }
     }
     render(){
+        
         return(
             <div>
                 <Navbar value={this.state.value}/>
