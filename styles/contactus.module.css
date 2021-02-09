@@ -1,58 +1,138 @@
-  .container {
+.App {
+  text-align: center;
+}
+.container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
   .sidebar {
-    padding-top: 15%;
+    
     grid-column: span 4;
-    align-content:center;
-    padding-left: 12%;
+    padding:10%;
+   
   }
   .mainpage {
-    height:100%;
+    
     grid-column: span 8;
-    align-content: center;
+    width:100%;
     background: #c8e9e9;
+    padding:10%;
   }
+  
+  .blogh5{
+    text-align: center;
+    margin-top: 30%;
+    margin-bottom:2%;
+    margin-left:3% ;
+      color:black;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      
+      
+      font-family: inherit;
+      line-height: 1.1;
+      margin-block-start: 1.67em;
+      margin-block-end: 1.67em;
+      
+  }
+  .date{
+    text-align: center;
+    color: #000000;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: Quicksand;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.02em;
+  }
+.contactTiles{
+  display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+  .contactTile{
+    display:inline-block;
+    height:200px;
+    width:200px;
+    background-color: white;
+    align-content: center;
+    grid-column: span 4;
+    margin:15px;
+    padding:5vh;
+    border-radius: 10%;
+  }
+  .contactTile:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .contactForm{
+    background-color: white;
+    width: 70%;
+    
+  }
+.sidebar table{
+  
+  background-color: #c8e9e9;
+  width:20vh;
+  height:19vh;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:10%;
+  margin-bottom: 40px;
+}
+.sidebar td {
+  border: 1px solid black;
+  
+  margin: 0;
+  padding: 0;
+}
+.sidebar td img{
+
+  width:35px;
+  margin-left: 10px;
+  
+  cursor: pointer;
+}
+.date img{
+  display: block;
+  width:40vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.date b{
+font-size: 16px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.contactTile img:first-of-type{
+  margin-left:25%;
+  margin-right:auto;
+  width:75px;
+}
 
   @media screen and (max-width: 768px) {
-    .sidebar {
-      grid-column: span 12;
-    }
-    .mainpage {
+    .contactTile {
       grid-column: span 12;
     }
   }
   @media screen and (max-width: 480px) {
-    .sidebar {
+    .contactTile {
       grid-column: span 12;
     }
-    .mainpage {
-      grid-column: span 12;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .sidebar {
-      grid-row: 2;
-      grid-column: span 12;
-    }
-    
-    .mainpage{
-      grid-row: 2;
-      grid-column: span 12;
-      
-    }
-    
   }
   @media screen and (max-width: 768px) {
     .sidebar {
-      grid-row: 1;
       grid-column: span 12;
     }
-    
-    .mainpage{
-      grid-row: 2;
+    .mainpage {
       grid-column: span 12;
     }
-    
   }
+  @media screen and (max-width: 480px) {
+    .sidebar {
+      grid-column: span 12;
+    }
+    .mainpage {
+      grid-column: span 12;
+    }
+  }
+  
