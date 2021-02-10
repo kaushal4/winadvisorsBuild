@@ -3,18 +3,18 @@ import Images from "next/image"
 import style from "../../styles/arrow.module.css"
 function Image(props){
     return(
-        <div className={style.sliderimages}>
-            <div className={props.imageArr[0]} >
-                <img src={"/images/placeholder-1.jpg"} alt="img not found" width="64" height="64" ></img>
+        <div>
+            <div className={`${props.imageArr[0]} innerImageContainer`} >
+                <img src={"/images/360assistant.jpg"} alt="img not found" ></img>
             </div>
             <div className={props.imageArr[1]} >
-                <img src={"/images/placeholder-2.jpg"} alt="img not found" width="64" height="64"></img>
+                <img src={"/images/placeholder-2.jpg"} alt="img not found"></img>
             </div>
             <div className={props.imageArr[2]}  >
-                <img src={"/images/placeholder-3.jpg"} alt="img not found" width="64" height="64"></img>
+                <img src={"/images/placeholder-3.jpg"} alt="img not found"></img>
             </div>
             <div className={props.imageArr[3]} >
-                <img src={"/images/placehoolder-4.jpg"} alt="img not found" width="64" height="64"></img>
+                <img src={"/images/placehoolder-4.jpg"} alt="img not found"></img>
             </div>
         </div>
     )

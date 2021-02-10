@@ -4,6 +4,7 @@ import WorldClients from "./homepage/WordClients"
 import Genhandb from "./homepage/Genhandb"
 import ImageGrid from "./homepage/ImageGrid"
 import Cards from "./homepage/Cards"
+import Carousel from "../components/homepage/Carousel"
 class Main extends React.Component{
     constructor(){
         super();
@@ -35,7 +36,8 @@ class Main extends React.Component{
     render(){
         return(
             <div className="main">
-                <SlidingImages />
+                <Carousel />
+                {/* <SlidingImages /> */}
                 <h1>We address your following concerns</h1>
                 <Cards />
                 <WorldClients active={this.state.activateWorldClients}/>
