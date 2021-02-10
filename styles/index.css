@@ -1,6 +1,8 @@
-.main{
+/*main overflow commented only for debugging*/
+
+/* .main{
     overflow-x: hidden;
-}
+} */
 
 nav{
     height:15vh;
