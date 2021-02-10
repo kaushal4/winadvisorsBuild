@@ -108,6 +108,11 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   margin-right:auto;
   width:75px;
 }
+.map{
+  width:100%;
+  height:400px;
+  object-fit: cover;
+}
 
   @media screen and (max-width: 768px) {
     .contactTile {
@@ -117,6 +122,8 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   @media screen and (max-width: 480px) {
     .contactTile {
       grid-column: span 12;
+      
+      
     }
   }
   @media screen and (max-width: 768px) {
