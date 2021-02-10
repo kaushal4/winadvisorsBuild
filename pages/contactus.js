@@ -47,7 +47,9 @@ class ContactUs extends React.Component{
                 
                 
                 </div>
+                <a href="https://goo.gl/maps/7GV8oQJCVLaDg8id7"><img className={styles.map} src="./images/map.png"></img></a>
                 <Footer/>
+                
             </div>
         )
     }
