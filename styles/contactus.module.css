@@ -152,8 +152,13 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     background:#F9F9F9;
     padding:25px;
     margin:50px 0;
+
   }
+ .contact:hover{
   
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ }
+
   .contact h3 {
     color: teal;
     display: block;
@@ -181,7 +186,7 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     -webkit-transition:border-color 0.3s ease-in-out;
     -moz-transition:border-color 0.3s ease-in-out;
     transition:border-color 0.3s ease-in-out;
-    border:1px solid #AAA;
+    border:1.35px solid #AAA;
   }
   
   
@@ -197,10 +202,9 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   }
   
   .contact button[type="submit"]:hover {
-    background:#c8e9e9;
-    -webkit-transition:background 0.3s ease-in-out;
-    -moz-transition:background 0.3s ease-in-out;
-    transition:background-color 0.3s ease-in-out;
+    background:#5c979e;
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
   .contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
