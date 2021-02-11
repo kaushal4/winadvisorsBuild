@@ -18,14 +18,25 @@ class MainPage extends React.Component{
                     <p>We are waiting to hear from you.</p>
                 </div>
                 </div>
-                <div className="contactForm">
-                    <form>
-                    <input name="name" placeholder="Enter your name"></input>
-                    <input placeholder="Enter your email"></input>
-                    <input placeholder="Enter your phone no"></input>
-                    <input placeholder="Enter your message"></input>
-                    <button type="submit">Submit</button>
-                    </form>
+                
+                <div className={styles.contactform}>  
+                <form className={styles.contact} action="" method="post">
+                    <h3>Contact Us</h3>
+                    <h4>We will get back to you within 48 hours!.</h4>
+                    
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus></input>
+                    
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required></input>
+                   
+                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required></input>
+                    
+                    <input placeholder="Enter your message" type="text" required></input>
+                    
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                   
+                </form>
+                
+                
                 </div>
                 
             </div>
