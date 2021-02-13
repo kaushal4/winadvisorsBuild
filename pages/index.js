@@ -12,8 +12,20 @@ class App extends React.Component{
     }
     componentDidMount(){
         window.addEventListener("scroll",this.handleScroll);
-        window.addEventListener("resize",()=>{this.vh = window.innerHeight*0.01;})
+        window.addEventListener("resize",()=>{this.vh = window.innerHeight*0.01;
+            let body = document.getElementsByTagName("BODY")[0];
+            if(window.innerWidth>760){
+                body.style.width=`${(window.innerWidth - 100)}px`;
+            }else{
+                body.style.width=`${(window.innerWidth)}px`;
+            }
+            })
         this.vh = window.innerHeight*0.01;
+        if(window.innerWidth>760){
+            let body = document.getElementsByTagName("BODY")[0];
+            body.style.width=`${(window.innerWidth - 100)}px`;
+        }
+        
     }
     handleScroll(){
         let posy = window.scrollY;

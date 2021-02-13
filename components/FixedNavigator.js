@@ -1,5 +1,4 @@
 import React from "react";
-import style from "../styles/fixed.module.css";
 export default class FixedNavigator extends React.Component{
     constructor(){
         super();
@@ -8,7 +7,8 @@ export default class FixedNavigator extends React.Component{
     render(){
         return(
             <div className="fixedElement">
-                i wont betray kaushal and shambhavi
+                contact <br />
+                us
             </div>
         )
     }
