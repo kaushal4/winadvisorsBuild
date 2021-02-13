@@ -14,7 +14,7 @@ function Block2(props){
             <button className="dropdown" onMouseEnter={()=>{props.handeldropbox(0)}} onMouseLeave={()=>{props.handeldropboxLeave(true)}}>What We Do<img src="/symbols/dropdown.png" className="symbols"/></button>
             <div className={`block-3 ${props.mousepos?"dropdownMenu":""}`} onMouseEnter={()=>{props.mousepos?props.handeldropbox(1):props.handeldropbox(false)}} onMouseLeave={()=>{props.handeldropboxLeave(false)}}>
                 <div className="nav-line"></div>
-                <button>India entry</button>
+                <button><Link href="/india"><a>India Entry</a></Link></button>
                 <div className="nav-line"></div>
                 <button >Virtual CFO</button>
                 <div className="nav-line"></div>

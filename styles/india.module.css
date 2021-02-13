@@ -1,0 +1,77 @@
+.Text{
+    border:0.2em solid rgb(4, 170, 170);
+    color:rgb(35, 35, 102);
+    width:40%;
+    padding:0.5rem;
+    text-align: center;
+    height:fit-content;
+    position:relative;
+    left:-3rem;
+    font-size:xx-large;
+    font-weight: bolder;
+    background-color: rgba(256,256,256,0.5);
+
+}
+@media screen and (max-width: 1260px) {
+    .Text{
+        font-size:x-large;
+    }
+  }
+
+.Line{
+    height:30vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+    
+}
+.Line > figure >img{
+    border:3px solid black;
+}
+.Line > figure >img,.Line>figure{
+    height:100%;
+}
+.Line>figure{
+    position:relative;
+    left:3rem;
+}
+
+.lineContainer>div:nth-child(2n+1)>.Line >.Text{
+    order:1;
+    left:3rem;
+}
+.lineContainer>div:nth-child(2n+1)>.Line >figure{
+    order:2;
+    left:-3rem;
+}
+.lineContainer>div:nth-child(1)>.Line >figure>img{
+    border:none;
+}
+.lineContainer>div:nth-child(2)>.Line >figure>img{
+    border:none;
+}
+
+.square{
+    height:40px;
+    width:20px;
+    background-color: teal;
+    position :relative;
+    left:15px;
+}
+.triangle{
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid teal;
+}
+.arrowSymbol{
+    position: relative;
+    left:40%;
+    margin:0.5em 0 0 0;
+    width:fit-content;
+}
+.lineContainer>div:nth-child(2n+1)>.arrowSymbol{
+    left:60%;
+}

@@ -3,6 +3,7 @@ import Navbar from "../components/navbar/Navbar"
 import Main from "../components/Main"
 import Footer from "../components/footer"
 import Head from "next/head"
+import FixedNavigator from "../components/FixedNavigator"
 class App extends React.Component{
     constructor(){
         super();
@@ -34,6 +35,7 @@ class App extends React.Component{
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <script src="https://smtpjs.com/v3/smtp.js"></script>
                 </Head>
+                <FixedNavigator />
                 <Navbar value={this.state.value}/>
                 <Main />
                 <Footer />
