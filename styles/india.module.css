@@ -10,6 +10,7 @@
     font-size:xx-large;
     font-weight: bolder;
     background-color: rgba(256,256,256,0.5);
+    transition: 1s ease;
 
 }
 @media screen and (max-width: 1260px) {
@@ -35,16 +36,40 @@
 .Line>figure{
     position:relative;
     left:3rem;
+    transition: 1s ease;
 }
 
 .lineContainer>div:nth-child(2n+1)>.Line >.Text{
     order:1;
     left:3rem;
+    transition: 1s ease;
 }
 .lineContainer>div:nth-child(2n+1)>.Line >figure{
     order:2;
     left:-3rem;
+    transition: 0.6s linear;
 }
+/*planning the animation*/
+.lineContainer>div:nth-child(2n+1)>.Line >.Text.init{
+    left:0.25rem;
+    opacity: 0;
+}
+.lineContainer>div:nth-child(2n+1)>.Line >figure.init{
+    left:-0.25rem;
+    opacity: 0;
+}
+.Line>figure.init{
+    position:relative;
+    left:0.25rem;
+    opacity: 0;
+}
+.Text.init{
+    left:-0.25rem;
+    opacity:0;
+}
+
+
+/**/
 .lineContainer>div:nth-child(1)>.Line >figure>img{
     border:none;
 }
