@@ -27,11 +27,12 @@ nav{
     flex-grow: 1;
 }
 .block-2.move{
-    width:100vw;
+    width:100%;
     position:fixed;
     z-index:6;
     height:7.5vh;
     top:0;
+    left:0;
     animation: topin 0.1s linear;
 }
 .block-2.move.hamburger{
@@ -340,7 +341,7 @@ body{
 /*css for cards*/
 
 .Container{
-    margin:5vh 0 5vh 0;
+    margin:10vh 0 10vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -350,7 +351,7 @@ body{
     margin-bottom: 0;
     cursor: pointer;
     font-size: x-large;
-    margin:0 1.50rem 0 1.50rem;
+    margin:1.25rem 1.50rem 0 1.50rem;
 }
 .innerContainer{
     display: flex;
@@ -396,7 +397,7 @@ body{
 }
 @media screen and (min-width: 1300px){
     .innerContainer> p{
-        margin:0rem 5rem 0 5rem;
+        margin: 1.25rem 5rem 0 5rem;
     }
 }
 @media screen and (max-width: 420px){
