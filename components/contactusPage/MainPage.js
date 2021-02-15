@@ -23,14 +23,14 @@ class MainPage extends React.Component{
                 <form className={styles.contact} action="" method="post">
                     <h3>Contact Us</h3>
                     <h4>We will get back to you within 48 hours!.</h4>
-                    
-                    <input placeholder="Your name" type="text" tabindex="1" required autofocus></input>
-                    
-                    <input placeholder="Your Email Address" type="email" tabindex="2" required></input>
-                   
-                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required></input>
-                    
-                    <input placeholder="Enter your message" type="text" required></input>
+                    <label for="name">NAME:</label>
+                    <input  type="text" tabindex="1" required autofocus></input>
+                    <label for="email">EMAIL:</label>
+                    <input  type="email" tabindex="2" required></input>
+                    <label for="contact">CONTACT NO:</label>
+                    <input  type="tel" tabindex="3" required></input>
+                    <label for="message">MESSAGE:</label>
+                    <textarea  name="message"  ></textarea>
                     
                     <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                    
