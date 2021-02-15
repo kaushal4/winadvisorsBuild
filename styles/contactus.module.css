@@ -151,7 +151,7 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   
   .contact input[type="text"], .contact input[type="email"], .contact input[type="tel"], .contact input[type="url"],  .contact button[type="submit"] { 
     font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
-    
+    border-radius: 3%;
    }
    .contact label{
     color:rgb(94, 94, 94);
@@ -161,6 +161,7 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     background:#F9F9F9;
     padding:25px;
     margin:40px 0;
+    border-radius: 1%;
     
   }
  .contact:hover{
@@ -192,6 +193,7 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     margin:0 0 5px;
     padding:10px;
     resize: vertical;
+    border-radius: 1%;
   }
   .contact textarea:hover{
     -webkit-transition:border-color 0.3s ease-in-out;
@@ -226,6 +228,7 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     margin:0 0 5px;
     padding:10px;
     font-size:15px;
+    
   }
   
   .contact button[type="submit"]:hover {
