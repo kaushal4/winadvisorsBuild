@@ -30,7 +30,7 @@ class MainPage extends React.Component{
                     <label for="contact">CONTACT NO:</label>
                     <input  type="tel" tabindex="3" required></input>
                     <label for="message">MESSAGE:</label>
-                    <textarea  name="message"  ></textarea>
+                    <textarea  name="message" required ></textarea>
                     
                     <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">SUBMIT</button>
                    
