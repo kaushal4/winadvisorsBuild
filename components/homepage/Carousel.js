@@ -95,13 +95,11 @@ export default class Carousel extends React.Component{
         this.startSlide = this.startSlide.bind(this);
     }
     startSlide(){
-        console.log("out");
         this.slideInterval = setInterval(()=>{
             this.handleRight();
         },3000)
     }
     stopSlide(){
-        console.log("here");
         clearInterval(this.slideInterval)
     }
     async handleRight(){
@@ -121,7 +119,6 @@ export default class Carousel extends React.Component{
     }
     componentDidUpdate(){
         if(this.state.counter==4 && this.state.direction==0){
-            console.log("here");
             setTimeout(()=>{this.setState({counter:0})},500);
         }
     }

@@ -15,7 +15,7 @@ class App extends React.Component{
         window.addEventListener("resize",()=>{this.vh = window.innerHeight*0.01;
             let body = document.getElementsByTagName("BODY")[0];
             if(window.innerWidth>760){
-                body.style.width=`${(window.innerWidth - 100)}px`;
+                body.style.width=`${(document.documentElement.clientWidth- 100)}px`;
             }else{
                 body.style.width=`${(window.innerWidth)}px`;
             }
@@ -23,7 +23,7 @@ class App extends React.Component{
         this.vh = window.innerHeight*0.01;
         if(window.innerWidth>760){
             let body = document.getElementsByTagName("BODY")[0];
-            body.style.width=`${(window.innerWidth - 100)}px`;
+            body.style.width=`${(document.documentElement.clientWidth - 100)}px`;
         }
         
     }
