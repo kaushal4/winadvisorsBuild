@@ -22,7 +22,7 @@ class MainPage extends React.Component{
                 <div className={styles.contactform}>  
                 <form className={styles.contact} action="" method="post">
                     <h3>Contact Us</h3>
-                    <h4>We will get back to you within 48 hours!.</h4>
+                    <h4>Feel free to reach us here and we’ll get back to you as soon as possible</h4>
                     <label for="name">NAME:</label>
                     <input  type="text" tabindex="1" required autofocus></input>
                     <label for="email">EMAIL:</label>
@@ -32,7 +32,7 @@ class MainPage extends React.Component{
                     <label for="message">MESSAGE:</label>
                     <textarea  name="message"  ></textarea>
                     
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">SUBMIT</button>
                    
                 </form>
                 

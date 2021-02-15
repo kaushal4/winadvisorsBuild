@@ -4,7 +4,7 @@ class SideBar extends React.Component{
     constructor(){
         super();
         
-        this.images = [["/symbols/facebbook.png","https://www.facebook.com/WIN-CORPORATE-ADVISORS-193426394758642"],["/symbols/linkedin.png","https://www.linkedin.com/company/wincorporateadvisors/"],["/symbols/twitter.png","https://twitter.com/AdvisorsWin"]]
+        this.images = [["/symbols/facebbook.png","https://www.facebook.com/WIN-CORPORATE-ADVISORS-193426394758642"],["/symbols/linkedin.png","https://www.linkedin.com/company/wincorporateadvisors/"],["/symbols/twitter.png","https://twitter.com/AdvisorsWin"],["/symbols/whatsapp.png","https://wa.me/+919082114257"]]
     }
     render(){
         
@@ -23,7 +23,7 @@ class SideBar extends React.Component{
                     </tr>
                     <tr>
                     <td>{images[2]}</td>
-                    <td>{images[0]}</td>
+                    <td>{images[3]}</td>
                     </tr>
                 </table>
 
