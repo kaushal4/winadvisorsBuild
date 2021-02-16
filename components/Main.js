@@ -5,6 +5,7 @@ import Genhandb from "./homepage/Genhandb"
 import ImageGrid from "./homepage/ImageGrid"
 import Cards from "./homepage/Cards"
 import Carousel from "../components/homepage/Carousel"
+import MiddleForm from "../components/homepage/MiddleForm"
 class Main extends React.Component{
     constructor(){
         super();
@@ -40,6 +41,7 @@ class Main extends React.Component{
                 {/* <SlidingImages /> */}
                 <h1>We address your following concerns</h1>
                 <Cards />
+                <MiddleForm />
                 <WorldClients active={this.state.activateWorldClients}/>
                 <div className="ParallexSection">
                     <ImageGrid />

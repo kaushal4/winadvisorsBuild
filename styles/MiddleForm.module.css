@@ -1,0 +1,141 @@
+.mainContainer{
+    height:500px;
+    display: flex;
+    position:relative;
+    margin:0 2em 4em 2em; 
+}
+.mainContainer > figure{
+    height:90%;
+    width:120%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    margin:0 0 0 50px;
+    position:relative;
+    background-color: rgb(166, 233, 233);
+}
+.mainContainer > figure:last-of-type{
+    flex-basis: 52%;
+    align-self: flex-end;
+    position: relative;
+    left:-10%;
+    z-index: -1;
+    margin:0 50px 0 0;
+}
+.mainContainer > figure >p{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    margin-top: 1.5em;
+    font-size: 2.25em;
+    width:60%;
+    color:black;
+}
+.mainContainer > figure:last-of-type >p{
+    color:aliceblue;
+}
+.mainContainer > figure> img{
+    object-fit: cover;
+    height:100%;
+    width: 100%;
+    border:3px solid grey;
+}
+.mainContainer > figure:first-of-type >img{
+    mix-blend-mode:luminosity;
+}
+.mainContainer > form{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%) scaleX(1.45) scaleY(1.25);
+    top:70%;
+}
+.mainContainer > form >input{
+    margin: 5px 0 5px 0;
+}
+.mainContainer > form >input:last-of-type{
+    margin: 0 0 5px 0;
+}
+#formText{
+    top:65%;
+    margin:0%;
+    left:auto;
+    right:0%;
+    width:fit-content;
+    transform: translateX(0%);
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+.button{
+    text-align: center;
+    display: block;
+    border: 2px solid teal;
+    width: 8em;
+    height: 2em;
+    transition: all 0.2s ease-in-out;
+    margin:auto;
+
+}
+.button:hover{
+    box-shadow:
+    inset 4rem 0 0 0 teal,
+    inset -4rem 0 0 0 teal;
+    cursor: pointer;
+    color: #263238;
+    color:white;
+}
+
+@media screen and (max-width:950px){
+    .mainContainer{
+        flex-direction: column;
+        height:fit-content;
+    }
+    .mainContainer > figure{
+        height:250px;
+        flex-basis: auto;
+        justify-self: center;
+        width: 100%;
+        margin:0;
+    }
+    .mainContainer > figure:last-of-type{
+        flex-basis: auto;
+        position: relative;
+        z-index: -1;
+        margin:0;
+        align-self: center;
+        left:0%;
+    }
+    .mainContainer > figure >p{
+        margin-top: 0.5em;;
+        position:absolute;
+        top:0;
+        left:50%;
+        transform: translateX(-50%);
+        font-size: 2em;
+        width:60%;
+        color:black;
+    }
+    .mainContainer > figure:last-of-type >p{
+        color:aliceblue;
+        top:100%;
+        transform: translate(-50%,-140%);
+    }
+    .mainContainer > form{
+        position:absolute;
+        left:50%;
+        transform: translate(-50%,-50%) scaleX(1.45) scaleY(1.25);
+        top:50%;
+    }
+    #formText{
+        position:absolute;
+        top:60%;
+        margin:0%;
+        left:50%;
+        width:fit-content;
+        transform: translateX(-50%);
+        font-size: 1.6em;
+        text-transform: uppercase;
+    }
+
+}
