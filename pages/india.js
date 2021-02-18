@@ -3,6 +3,7 @@ import Navbar from "../components/navbar/Navbar"
 import ImageBar from "../components/ImageBar"
 import style from "../styles/india.module.css"
 import FixedNavigator from "../components/FixedNavigator"
+import Footer from "../components/footer"
 function Text(props){
     let TextClasses=`${style.Text} ${style.init}`
     let ImgClasses = `${style.init}`
@@ -17,9 +18,9 @@ function Text(props){
             <figure className={ImgClasses}>
                 <img src={props.img} alt={props.text} />
             </figure>
-        <div className={TextClasses}>
-            <span>{props.text}</span> 
-        </div>
+            <div className={TextClasses}>
+                <span>{props.text}</span> 
+            </div>
         
         </div>
         <div className={style.arrowSymbol}>
@@ -35,7 +36,7 @@ function Text(props){
 class SlideShow extends React.Component{
     constructor(){
         super();
-        this.textArr=["You approach us with intention to start you business in India","Our following process startd for setting up your business in India","Registration of your company in India","Provision for resident Director","Foreign investment approval","Obtaining necessary licenses","Business consultancy","Searching/Obtaining office space","Support in preparing office infrastructure","Import Export consultancy","Human Resource management support"];
+        this.textArr=["You approach us with intention to start you business in India","Our following process startd for setting up your business in India","Registration of your company in India","Provision for resident Director","Foreign investment approval","Obtaining necessary licenses","Business consultancy","Searching/ Obtaining office space","Support in preparing office infrastructure","Import Export consultancy","Human Resource management support"];
         this.imgArr = [];
         for(let i=1;i<12;i++){
             this.imgArr.push(`/images/india${i}.jpg`);       
@@ -86,7 +87,7 @@ export default class India extends React.Component{
         window.addEventListener("resize",()=>{this.vh = window.innerHeight*0.01;
             let body = document.getElementsByTagName("BODY")[0];
             if(window.innerWidth>760){
-                body.style.width=`${(window.innerWidth - 100)}px`;
+                body.style.width=`${(document.documentElement.clientWidth- 60)}px`;
             }else{
                 body.style.width=`${(window.innerWidth)}px`;
             }
@@ -94,7 +95,7 @@ export default class India extends React.Component{
         this.vh = window.innerHeight*0.01;
         if(window.innerWidth>760){
             let body = document.getElementsByTagName("BODY")[0];
-            body.style.width=`${(window.innerWidth - 100)}px`;
+            body.style.width=`${(document.documentElement.clientWidth - 60)}px`;
         }
         //text and image animation logic
         this.elements = [...document.querySelectorAll(`.${style.Line}`)].map((element)=>{return([element.getBoundingClientRect().top,true])});
@@ -119,6 +120,7 @@ export default class India extends React.Component{
                 <Navbar value={this.state.value}/>
                 <ImageBar imageLocation="/images/tax (2).jpg" text="India Entry"/>
                 <SlideShow activate={this.state.lineArr}/>
+                <Footer />
             </div>
         )
     }

@@ -8,12 +8,12 @@ export default class MiddleForm extends React.Component{
         return(
             <div className={style.mainContainer}>
                 <figure>
-                    <img src="/Images/main2.jpg" />
+                    <img src="/Images/main2_3.jpg" />
                     <p>Do you think Virtual CFO is the need of time?</p>
                     <p id={style.formText}>Talk to expert</p>
                 </figure>
                 <figure>
-                <img src="/Images/main1.jpg" />
+                <img src="/Images/main1_1.jpg" />
                 <p>Did you see the scope and decide to enter in India?</p>
                 </figure>
                 <form>
