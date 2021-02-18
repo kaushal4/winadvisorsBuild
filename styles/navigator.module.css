@@ -1,11 +1,27 @@
 .symbol{
-    width:70%;
-    margin-left: 10px;
+    width:60%;
+    margin-left: 3px;
     margin-right: auto;
     column:teal ;
+    margin-bottom: 10px;
 }
+.up{
+    position: absolute;
+    top:0;
+    margin-top: 30%;
+    width: 100%;
+}
+.down{
+   
+    position: absolute;
+    bottom:0;
+    margin-bottom: 80%;
+}
+
 .followus{
-    font-size: small;
+    font-size: 14px;
+    
+    
     letter-spacing: 0.05rem ;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -13,8 +29,14 @@
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
 }
+
 .tooltiptext{
+    position:relative;
     
+}
+.tooltiptext:hover::after{
+    content:attr(href);
+    position:absolute;
     width: 200px;
     color: #fff;
     background-color: #403f56;
@@ -23,20 +45,8 @@
     text-align: center;
     border-radius: 3px;
     padding: 5px;
-    position: absolute;
     z-index: 999;
-    left: 64px;
-    top: 0;
-    width: 200px;
-    color: #fff;
-    background-color: #403f56;
-    font-size: 14px;
-    font-family: "Poppins",sans-serif;
-    text-align: center;
-    border-radius: 3px;
-    padding: 5px;
-    position: absolute;
-    z-index: 999;
-    left: 64px;
-    top: 0;
+    left: 60px;
+    cursor:pointer;
+    
 }
