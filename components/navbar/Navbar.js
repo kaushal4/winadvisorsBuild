@@ -16,7 +16,7 @@ function Block2(props){
                 <div className="nav-line"></div>
                 <button><Link href="/india"><a>India Entry</a></Link></button>
                 <div className="nav-line"></div>
-                <button >Virtual CFO</button>
+                <button ><Link href="/virtualcfo"><a>virtual CFO</a></Link></button>
                 <div className="nav-line"></div>
                 <button ><Link href="/tax"><a>tax and regulatory</a></Link></button>
                 <div className="nav-line"></div>

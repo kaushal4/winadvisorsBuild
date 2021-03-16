@@ -1,0 +1,131 @@
+.superContainer{
+    padding-bottom:3em;
+}
+
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    margin:0 3em;
+}
+.superContainer:nth-of-type(2n){
+    background-color: rgb(202, 230, 230);
+}
+.superContainer:nth-of-type(2n+1)>.mainContainer > figure{
+    order: 2;
+}
+.mainContainer>figure{
+    flex-grow: 1;
+    width:100%;
+    margin:0;
+    display: flex;
+    align-items: center;
+}
+.textContainer{
+    flex-grow: 1;
+    width: 100%;
+}
+.mainContainer > figure > img{
+    width: 100%;
+    object-fit: cover;
+}
+.superContainer:nth-of-type(2n) > .heading{
+    margin-right:3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.superContainer:nth-of-type(2n) > .heading > .headingWrapper{
+    grid-column-start:2 ;
+}
+.headingWrapper{
+    display: flex;
+}
+.superContainer > .heading{
+    margin-left:3em;
+    padding-top: 0.5em;
+    font-size: x-large;
+    font-weight:bolder;
+}
+.dash{
+    width:10px;
+    height:8px;
+    align-self: center;
+    /* position:relative;
+    top:3px; */
+    /* top:50%;
+    transform: translateY(-50%); */
+    background-color: teal;
+    display: inline-block;
+    margin:5px;
+}
+.superContainer:nth-of-type(2n)>.heading>.headingWrapper >.dash{
+    order:2;
+    
+}
+.textContainer > ul >li{
+    margin-bottom:1.5em;
+}
+@media screen and (max-width:600px){
+    .mainContainer{
+        flex-direction: column;
+    }
+    .superContainer:nth-of-type(2n) > .heading{
+        display: block;
+    }
+}
+
+/* styling for main heading */
+.mainHeading > h2{
+    text-align: center;
+}
+
+.mainHeading>p{
+    padding:0 1em;
+    text-align: center;
+}
+
+.mainHeading{
+    border-top:5px solid teal;
+    border-bottom:5px solid teal;
+    margin-top: 2em;
+    background-color: rgb(202, 230, 230);
+}
+
+/*card styling*/
+.card{
+    width:120px;
+    height:150px;
+    background-color: aquamarine;
+    padding:1em;
+    display: flex;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px rgba(1, 100, 71, 0.6);
+    position:relative;
+}
+.card:hover{
+    animation: up 1s linear infinite alternate-reverse;
+}
+@keyframes up {
+    from {top:10px;}
+    to {top: 0px;}
+  }
+.card:nth-of-type(2n+1){
+    margin-right: 30px;
+}
+.cardContainer{
+    order:2;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+.rowContainer{
+    display: flex;
+    justify-content: center;
+}
+.rowContainer:nth-of-type(2){
+    margin-top: 1.5em;
+    position:relative;
+    left:30px;
+    
+}
+

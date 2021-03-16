@@ -394,6 +394,9 @@ body{
         top:100%;
         margin-top: 1rem;
     }
+    .innerContainer:nth-child(2)::after{
+        display: none;
+    } 
 }
 @media screen and (min-width: 1300px){
     .innerContainer> p{
@@ -425,6 +428,9 @@ body{
     .addingNumbers{
         flex-direction: column;
     }
+    .innerContainer::after{
+        display: none;
+    } 
 }
 /*svg animations*/
 #outer-wheel{
@@ -464,7 +470,6 @@ body{
     -webkit-clip-path: circle(100%);
     clip-path: circle(100%);
     animation: blinking 1s linear infinite;
-    fill:rgb(1, 179, 179);
   }
   
   @keyframes blinking{
@@ -476,6 +481,78 @@ body{
       -webkit-clip-path: circle(100%);
       clip-path: circle(100%);
     }
+  }
+  /*tax animation*/
+
+  #line1,#line2,#line4{
+    stroke-dasharray: 70;
+    stroke-dashoffset: 70; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    stroke: teal;
+  }
+  #line1{
+    animation-name:dash1;
+  }
+  #line2{
+    animation-name:dash2;
+  }
+  #line4{
+    animation-name:dash3;
+  }
+  @keyframes dash1{
+    0%{
+      stroke-dashoffset: 70;
+    }
+    33%{
+      stroke-dashoffset: 0;
+    }
+    100%{
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash2{
+    0%{
+      stroke-dashoffset: 70;
+    }
+    33%{
+      stroke-dashoffset: 70;
+    }
+    66%{
+      stroke-dashoffset: 0;
+    }
+    100%{
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash3{
+    0%{
+      stroke-dashoffset: 70;
+    }
+    66%{
+      stroke-dashoffset: 70;
+    }
+    100%{
+      stroke-dashoffset: 0;
+    }
+  }
+  #Tax{
+    fill:teal;
+  }
+  #Vector{
+    transform: translateY(0%);
+    animation:movedown 1s linear infinite alternate;
+    fill:teal;
+  }
+  @keyframes movedown{
+    to{
+      transform: translateY(8%);
+    }
+  }
+  #outline{
+      stroke-width: 5px;
+      stroke-linejoin: round;
   }
 
   
