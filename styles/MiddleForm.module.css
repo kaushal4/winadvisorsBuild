@@ -140,3 +140,14 @@
     }
 
 }
+
+@media screen and (max-width:520px){
+    #formText{
+        font-size:1.2em;
+    }
+    .mainContainer > figure > p{
+        font-size:1.5em;
+    }
+
+
+}

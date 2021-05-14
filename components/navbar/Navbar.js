@@ -20,7 +20,7 @@ function Block2(props){
                 <div className="nav-line"></div>
                 <button ><Link href="/tax"><a>tax and regulatory</a></Link></button>
                 <div className="nav-line"></div>
-                <button >360° Assistant</button>
+                <button ><Link href="/assistant"><a>360° Assistant</a></Link></button>
                 <div className="nav-line"></div>
             </div>
             

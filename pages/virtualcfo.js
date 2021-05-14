@@ -10,18 +10,18 @@ function Cards(props){
         <div className={style.cardContainer}>
             <div className={style.rowContainer}>
                 <div className={style.card}>
-                    <span>content for card-1</span>
+                    <span>Budget</span>
                 </div>
                 <div className={style.card}>
-                    content for card-2
+                    Financial planning
                 </div>
             </div>
             <div className={style.rowContainer}>
                 <div className={style.card}>
-                    content for card-3
+                    MIS
                 </div>
                 <div className={style.card}>
-                    cantent for card-4
+                    cashflow
                 </div>
             </div>
         </div>

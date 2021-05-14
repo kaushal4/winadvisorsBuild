@@ -92,16 +92,22 @@
 }
 
 /*card styling*/
+
 .card{
     width:120px;
     height:150px;
-    background-color: aquamarine;
+    background-color: teal;
     padding:1em;
     display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 1em;
     box-shadow: 5px 5px 5px rgba(1, 100, 71, 0.6);
     position:relative;
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
+    color:white;
 }
 .card:hover{
     animation: up 1s linear infinite alternate-reverse;
