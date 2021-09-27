@@ -1,102 +1,98 @@
-.OuterContainer{
-    width:100%;
-    position:relative;
-    overflow-x: hidden;
-    overflow-y: visible;
-    margin-bottom: 3em;
+.OuterContainer {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+  margin-bottom: 3em;
 }
-.animate{
-    transition: 0.5s ease;
+.animate {
+  transition: 0.5s ease;
 }
-.Container{
-    width:500vw;
-    height:70vh;
-    display: flex;
-    
-    background-color: rgb(28, 192, 192);
+.Container {
+  width: 500vw;
+  height: 80vh;
+  display: flex;
+
+  background-color: rgb(176 182 244);
 }
 
-.Container > img{
-    width:20%;
-    height:100%;
-    object-fit: cover;
-    mix-blend-mode:multiply;
+.Container > img {
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
 }
 
-.OuterContainer > button:first-of-type{
-    position:absolute;
-    left:0;
-    top:10%;
+.OuterContainer > button:first-of-type {
+  position: absolute;
+  left: 0;
+  top: 10%;
 }
 
-.OuterContainer > button:last-of-type{
-    position:absolute;
-    right:0;
-    transform: translateX(-50%);
-    top:10%; 
+.OuterContainer > button:last-of-type {
+  position: absolute;
+  right: 0;
+  transform: translateX(-50%);
+  top: 10%;
 }
 
-.Border{
-    position:absolute;
-    width: 90%;
-    height: 63vh;
-    border:solid;
-    border-width:0.5em 0.5em 0.5em 0.5em;
-    border-color: aliceblue;
-    top:3.5vh;
-    left:5%;
+.Border {
+  position: absolute;
+  width: 90%;
+  height: 63vh;
+  border: solid;
+  border-width: 0.5em 0.5em 0.5em 0.5em;
+  border-color: aliceblue;
+  top: 3.5vh;
+  left: 5%;
 }
 
-.tabs{
-    display: flex;
-    width:10%;
-    position: absolute;
-    top:85%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    justify-content: space-between;
+.tabs {
+  display: flex;
+  width: 10%;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
 }
-.tab{
-    width:22%;
-    height:4px;
-    background-color: aliceblue;
-    cursor: pointer;
+.tab {
+  width: 22%;
+  height: 4px;
+  background-color: aliceblue;
+  cursor: pointer;
 }
-.Text{
-    position:absolute;
-    color:aliceblue;
-    font-size: 50px;
-    left:50%;
-    top:70%;
-    transform: translateX(-50%);
-    transition: 0.5s linear;
-    width:fit-content;
-}
-
-.hide.Text{
-    top:100%;
-    
+.Text {
+  position: absolute;
+  color: aliceblue;
+  font-size: 50px;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+  transition: 0.5s linear;
+  width: fit-content;
 }
 
-@media screen and (max-width: 720px){
-    .Border{
-        display: none;
-    }
-    .Text{
-        top:65%;
-        font-size: 2em;
-        transition: none;
-    }
-    .Text.smaller{
-        font-size: 1.5em;
-        
-    }
-    .Container{
-        height:50vh;
-    }
-    .tabs{
-        width:30%
-    }
+.hide.Text {
+  top: 100%;
 }
 
-
+@media screen and (max-width: 720px) {
+  .Border {
+    display: none;
+  }
+  .Text {
+    top: 65%;
+    font-size: 2em;
+    transition: none;
+  }
+  .Text.smaller {
+    font-size: 1.5em;
+  }
+  .Container {
+    height: 50vh;
+  }
+  .tabs {
+    width: 30%;
+  }
+}

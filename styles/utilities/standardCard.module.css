@@ -1,0 +1,11 @@
+.container {
+  background-color: black;
+  bottom: 0;
+  width: 90%;
+  padding: 0 1em;
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
